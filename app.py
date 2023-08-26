@@ -56,7 +56,7 @@ def save_diary():
     }
 
     db.dairy.insert_one(doc)
-    return jsonify({'msg': 'Data Posted'})
+    return jsonify({'msg': 'Dairy telah disave'})
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
